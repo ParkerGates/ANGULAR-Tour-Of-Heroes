@@ -26,4 +26,9 @@ export class HeroesComponent implements OnInit {
     this.selectedHero = hero;
   }
 
+  onDone($event: string): void {
+    console.log("done with: ", $event);
+    this.selectedHero = undefined;
+  }
+
 }
